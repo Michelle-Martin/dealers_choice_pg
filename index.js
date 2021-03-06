@@ -117,31 +117,30 @@ console.log(ex)
 })
 
 //need to fix random book
-app.get('/random', async(req,res)=> {
-    const getBooks
-    const randombook = async() => {return (await Math.floor(Math.random()* Math.floor(10)))}
-    const html = `<html> 
-    <img " ">
-    <h1> We suggest you read... </h1>
-    <div> ${books.randombook} </div>
-   <div> </div>
-    <div> <a href='/random'> Pick a book for me! </div>
-    </html>
-    <style>
-    h1{
-        font-family: Impact;
-        background-color: palegreen;
-    }
-    div{
-        font-family: Impact;
-    }
-    </sytle>
-    `
-    try{ 
-        res.send(html)
+// app.get('/random', async(req,res)=> {
+//     const randombook = async() => {return (await Math.floor(Math.random()* Math.floor(10)))}
+//     const books = await getBooks()
+//     const html = `<html> 
+//     <h1> We suggest you read... </h1>
+//     <div> ${books.randombook} </div>
+//    <div> </div>
+//     <div> <a href='/random'> Pick a book for me! </div>
+//     </html>
+//     <style>
+//     h1{
+//         font-family: Impact;
+//         background-color: palegreen;
+//     }
+//     div{
+//         font-family: Impact;
+//     }
+//     </sytle>
+//     `
+//     try{ 
+//         res.send(html)
 
-    }
-    catch(ex){
-console.log(ex)
-    }
-})
+//     }
+//     catch(ex){
+// console.log(ex)
+//     }
+// })
